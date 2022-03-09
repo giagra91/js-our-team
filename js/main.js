@@ -58,6 +58,7 @@ const secondTeam = [
 team.push(secondTeam[0]);
 team.push(secondTeam[1]);
 team.push(secondTeam[2]);
+team.push(secondTeam[3]);
 
 // Ciclo for in per stampare in console gli elementi dei vari oggetti sottoforma di stringa
 for (let key in team){
