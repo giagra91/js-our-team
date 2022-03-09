@@ -2,3 +2,16 @@ body{
     font-family: "Montserrat", Arial;
     background-color: rgb(255, 255, 151);
 }
+
+h5{
+    background-color: sandybrown;
+    border-radius: 10px;
+    padding: .1rem;
+}
+
+p{
+    font-weight: 650;
+    background-color: silver;
+    border-radius: 20px;
+    padding: .1rem;
+}
