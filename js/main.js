@@ -32,14 +32,13 @@ const team = [
     },
 ];
 
-
 // Ciclo for in per stampare in console gli elementi dei vari oggetti sottoforma di stringa
 for (let key in team){
     // Creo un nuovo div per ogni giro del ciclo a cui aggiungo le classi di cui ho bisogno
     let newDiv = document.createElement(`div`);
     newDiv.classList.add(`col-4`, `p-4`, `text-center`);
 
-    // Creo le variabili in cui docrò racchiudere le informazioni da aggiungere al div appena creato
+    // Creo le variabili in cui dovrò racchiudere le informazioni da aggiungere al div appena creato
     let newImage = document.createElement(`img`)
     let newName = document.createElement(`h5`);
     let newRole = document.createElement(`p`);
@@ -53,7 +52,7 @@ for (let key in team){
     // Stampo i nomi in console e li aggiungo all'elemento appena creato per stamparli poi nel DOM      
     console.log(team[key].name);
     newName.innerHTML=team[key].name;
-    newName.classList.add(`fw-bold`, `mt-2`);
+    newName.classList.add(`fw-bold`, `my-2`);
     newDiv.appendChild(newName);
 
     // Stampo i ruoli in console e li aggiungo all'elemento appena creato per stamparli poi nel DOM
