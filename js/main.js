@@ -60,5 +60,7 @@ for (let key in team){
     console.log(team[key].role);
     newRole.innerHTML=team[key].role;
     newDiv.appendChild(newRole);
+    
+    // Stampo il nuovo div completo di tutti gli elementi nel DOM
     document.getElementById(`output`).appendChild(newDiv);
 }
