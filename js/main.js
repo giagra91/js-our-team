@@ -32,6 +32,33 @@ const team = [
     },
 ];
 
+const secondTeam = [
+    {
+    name: 'Paula Ramos',
+    role: 'Graphic Designer',
+    image: 'new-team-member-01.jpg',
+    },
+    {
+    name: 'John Smith',
+    role: 'Developer',
+    image: 'new-team-member-02.jpg',
+    },
+    {
+    name: 'Laura Bloom',
+    role: 'Chief Editor',
+    image: 'new-team-member-03.jpg',
+    },
+    {
+    name: 'Paul Wolf',
+    role: 'Office Manager',
+    image: 'new-team-member-04.jpg',
+    }
+];
+
+team.push(secondTeam[0]);
+team.push(secondTeam[1]);
+team.push(secondTeam[2]);
+
 // Ciclo for in per stampare in console gli elementi dei vari oggetti sottoforma di stringa
 for (let key in team){
     // Creo un nuovo div per ogni giro del ciclo a cui aggiungo le classi di cui ho bisogno
