@@ -1,4 +1,4 @@
-// Array di oggetti fornito 
+// Array di oggetti fornito
 const team = [
     {
     name: 'Wayne Barnett',
@@ -55,10 +55,10 @@ const secondTeam = [
     }
 ];
 
-team.push(secondTeam[0]);
-team.push(secondTeam[1]);
-team.push(secondTeam[2]);
-team.push(secondTeam[3]);
+// Ciclo for per inserire i nuovi oggetti del nuovo array nell'array principale
+for (let i = 0 ; i < secondTeam.length ; i++){
+    team.push(secondTeam[i]);
+}
 
 // Ciclo for in per stampare in console gli elementi dei vari oggetti sottoforma di stringa
 for (let key in team){
@@ -67,9 +67,9 @@ for (let key in team){
     newDiv.classList.add(`col-4`, `p-4`, `text-center`);
 
     // Creo le variabili in cui dovrò racchiudere le informazioni da aggiungere al div appena creato
-    let newImage = document.createElement(`img`)
+    let newImage = document.createElement(`img`);
     let newName = document.createElement(`h5`);
-    let newRole = document.createElement(`p`);
+    let newRole = document.createElement(`span`);
 
     // Stampo le immagini come stringa in console e le aggiungo all'elemento appena creato per stamparle poi nel DOM
     console.log(team[key].image);
@@ -77,17 +77,18 @@ for (let key in team){
     newImage.src=`img/` + (team[key].image);
     newDiv.appendChild(newImage);
 
-    // Stampo i nomi in console e li aggiungo all'elemento appena creato per stamparli poi nel DOM      
+    // Stampo i nomi in console e li aggiungo all'elemento appena creato per stamparli poi nel DOM
     console.log(team[key].name);
     newName.innerHTML=team[key].name;
-    newName.classList.add(`fw-bold`, `my-2`);
+    newName.classList.add(`fw-bold`, `my-3`);
     newDiv.appendChild(newName);
 
     // Stampo i ruoli in console e li aggiungo all'elemento appena creato per stamparli poi nel DOM
     console.log(team[key].role);
     newRole.innerHTML=team[key].role;
+    newRole.classList.add(`px-5`, `py-1`);
     newDiv.appendChild(newRole);
-    
+
     // Stampo il nuovo div completo di tutti gli elementi nel DOM
     document.getElementById(`output`).appendChild(newDiv);
 }

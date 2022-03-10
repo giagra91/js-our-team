@@ -9,9 +9,15 @@ h5{
     padding: .1rem;
 }
 
-p{
+span{
     font-weight: 650;
     background-color: silver;
     border-radius: 20px;
     padding: .1rem;
+/*     padding-left: .7rem;
+    padding-right: .7rem; */
+}
+
+img{
+    border-radius: 20%;
 }
