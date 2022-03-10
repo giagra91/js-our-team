@@ -80,7 +80,7 @@ for (let key in team){
     // Stampo i nomi in console e li aggiungo all'elemento appena creato per stamparli poi nel DOM
     console.log(team[key].name);
     newName.innerHTML=team[key].name;
-    newName.classList.add(`fw-bold`, `my-3`);
+    newName.classList.add(`fw-bold`, `my-3`, `fs-4`, `d-inline-block`);
     newDiv.appendChild(newName);
 
     // Stampo i ruoli in console e li aggiungo all'elemento appena creato per stamparli poi nel DOM
