@@ -40,7 +40,7 @@ for (let i = 0 ; i < team.length ; i++ ){
     <div class="col-4 p-4 text-center">
     <img class="img-fluid" src="img/${team[i].image}">
     <h5 class="fw-bold my-3 fs-4 d-inline-block">${team[i].name}</h5>
-    <span class="px-5 py-1">${team[i].role}/span>
+    <span class="px-5 py-1">${team[i].role}</span>
 </div>
     `
 }
